@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    display: flex; /* Flexbox to align items horizontally */
+    align-items: flex-start; /* Align containers to the top */
+    padding: 20px; /* Add some padding from the top and left */
+    position: absolute; /* Ensure the container is absolutely positioned at the top-left */
+    top: 0;
+    left: 0;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.links p {
+    margin: 5px 0;
+}
+
+.website-link {
+    color: rgb(255, 255, 255)
+}
+
+.links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.website-link:hover {
+    text-decoration: none; /* Ensures no underline on hover */
+    color: #ff9ec2; /* Optional: Change color on hover */
+}
+
+.third-left a {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* Removes underline */
+}
+
+
+.top-left {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    padding: 50px 0px 50px 50px; /* Adds space between the two containers */
+    text-align: left;
+    font-weight: 300;
+    line-height: 1.3;
+    top: 0;
+    left: 0; 
+}
+
+.second-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures even spacing between elements */
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    padding: 50px 50px 50px 0px; /* Adds space on the left */
+    text-align: right; /* Right-aligns the text */
+    font-weight: 300;
+    line-height: 1.3;
+    top: 0;
+    left: 210px;
+
+}
+
+.second-left p {
+    margin: 0; /* Ensures no extra margin between paragraphs */
+}
+
+
+.vertical-line {
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    height: 55px; /* Adjust height to match the container */
+    top: 51px;
+    left: 360px;
+}
+
+.third-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures even spacing between elements */
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    padding: 50px 50px 50px 0px; /* Adds space on the left */
+    text-align: left; /* Right-aligns the text */
+    font-weight: 300;
+    line-height: 1.3;
+    top: 0;
+    left: 380px;
+    text-decoration: none;
+}
+
+.name {
+    font-size: 250px;
+    position: absolute;
+    bottom: 0px; 
+    left:50px; 
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 200;
+
+
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full viewport width */
+    height: 100%; /* Full viewport height */
+    z-index: -1; 
+    background-color: black; 
+    object-fit: cover;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    position: absolute;
+    right: 70px;
+    top: 50px; /* Center the buttons horizontally */
+    gap: 20px; /* Space between the buttons */
+    margin-top: 20px; 
+    /* Add space above the buttons */
+}
+
+/* Style for the buttons */
+.btn {
+    display: inline-block;
+    padding: 10px; /* Adjust button size */
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight:400;
+    color: white; /* White text color */
+    background-color: transparent; /* Transparent background */
+    text-decoration: none; /* Remove underline from links */
+    border: 2px solid white; /* White border */
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    width: 120px;
+    text-align: center; /* Center the text inside the buttons */
+}
+
+/* Hover effect */
+.btn:hover {
+    background-color: white; /* White background on hover */
+    color: black; /* Black text on hover */
+}
+
+/*----------------------------------------------ABOUT------------------------------------------------*/
+
+.about-container{
+    
+    position: absolute;
+    flex-direction: column; 
+    text-align: left; 
+    top: 38%;
+    left: 12%;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.3;
+    width: 60%;
+    color: rgb(165, 165, 165);
+}
+
+.about-heading{
+    position: absolute;
+    top: 22%; 
+    left: 12%;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 70px; 
+}
+
+.about-container b{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        left: 10%;
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .about-heading {
+        top: 25%; 
+        left: 10%;
+        font-size: 50px;
+    }
+    .about-buttons{
+        left:10%;
+        font-size: 12px;
+    }
+}
+
+.about-container p {
+    margin-bottom: 16px; 
+}
+
+.button-container2 {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    position: fixed;
+    bottom:70px;
+    right: 35px; /* Center the buttons horizontally */
+    gap: 20px; /* Space between the buttons */
+    margin-top: 20px;
+}
+.btn2{
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight:400;
+    background-color: transparent; /* Transparent background */
+    text-decoration: none; /* Remove underline from links */
+    text-align: right; 
+    color: rgb(165, 165, 165);
+}
+
+.about-buttons{
+    position: absolute;
+    left: 12%;
+    top: 58%; /* Center the buttons horizontally */
+    gap: 20px; /* Space between the buttons */
+    margin-top: 20px;
+    display: flex; 
+}
+
+.btnp{
+    display: inline-block;
+    padding: 10px; /* Adjust button size */
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight:200;
+    color: white; /* White text color */
+    background-color: rgb(67, 67, 67); /* Transparent background */
+    text-decoration: none; /* Remove underline from links */
+    border: 1px solid white; /* White border */
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    width: 100px;
+    text-align: center;
+}
+
+.btnc{
+    display: inline-block;
+    padding: 10px; /* Adjust button size */
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight:200;
+    color: white; /* White text color */
+    background-color: transparent; /* Transparent background */
+    text-decoration: none; /* Remove underline from links */
+    border: 1px solid white; /* White border */
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    width: 70px;
+    text-align: center;
+    
+}
+
+/*----------------------------------------------PROJECTS------------------------------------------------*/
+.slider {
+    position: relative; /* Change from absolute to relative to keep it in place */
+    width: 368px;
+    height: 207px;
+    transform-style: preserve-3d; /* Center the carousel if needed */
+    animation: rotate 30s linear infinite; /* Adjust the speed of rotation */
+}
+
+/* Keyframes for smooth horizontal rotation */
+@keyframes rotate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg); /* Remove translate to keep it fixed */
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg); /* Smoothly rotate in place */
+    }
+}
+
+/* Style each image container (span) */
+.slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+/* Style for the images */
+.slider span img {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Optional hover effect for images */
+.slider span:hover img {
+    transform: translateY(-50px) scale(1.2); /* Slight hover effect */
+}
