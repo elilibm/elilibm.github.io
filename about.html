@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Elili Bagavathi Portfolio</title>
+    <title>Elili M</title>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@700&family=Inter:wght@400;500&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="logo.png" type="image/png">
 </head>
-<body>
     
     <h1 class="about-heading">ABOUT</h1>
     <div class="about-container">
@@ -19,13 +21,21 @@
 </div>
     <div class="about-buttons">
     <a href="projects.html" class="btnp">Projects</a>
-    <a href="projects.html" class="btnc">CV</a>
+    <a href="#" id="openResume" class="btnc">CV</a> 
+
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="Edited Resume.pdf" frameborder="0" width="100%" height="500px"></iframe>
+        </div>
+    </div>
+</div>
+
 </div>
 
     <div class="button-container2">
         <a href="index.html" class="btn2">Home</a>
         <a href="projects.html" class="btn2">Projects</a>
-        <a href="contact.html" class="btn2">Contact</a>
     </div>
 
 

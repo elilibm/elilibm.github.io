@@ -18,10 +18,10 @@ body {
 }
 
 .container {
-    display: flex; /* Flexbox to align items horizontally */
-    align-items: flex-start; /* Align containers to the top */
-    padding: 20px; /* Add some padding from the top and left */
-    position: absolute; /* Ensure the container is absolutely positioned at the top-left */
+    display: flex; 
+    align-items: flex-start; 
+    padding: 20px; 
+    position: absolute; 
     top: 0;
     left: 0;
 }
@@ -51,32 +51,32 @@ body {
 }
 
 .website-link:hover {
-    text-decoration: none; /* Ensures no underline on hover */
-    color: #ff9ec2; /* Optional: Change color on hover */
+    text-decoration: none; 
+    color: #ff9ec2; 
 }
 
 .third-left a {
-    color: #ffffff; /* Link color */
-    text-decoration: none; /* Removes underline */
+    color: #ffffff; 
+    text-decoration: none; 
 }
 
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black */
-    z-index: 0; /* Ensure it sits behind the content but above the video */
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.1); 
+    z-index: 0; 
 }
 
 .top-left {
     font-size: 16px;
     font-family: 'Inter', sans-serif;
     position: absolute;
-    padding: 70px 0px 50px 70px; /* Adds space between the two containers */
+    padding: 70px 0px 50px 70px; 
     text-align: left;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 1.3;
     top: 0;
     left: 0; 
@@ -90,16 +90,16 @@ body {
 
 
 .image-button img {
-    border-radius: 9%; /* This makes the image circular */
-    width: 35px; /* Ensure the width is equal to the height for a perfect circle */
-    height: 35px; /* Ensure the height is equal to the width */
+    border-radius: 9%; 
+    width: 35px; 
+    height: 35px; 
     object-fit: cover;
     opacity: 0.8;
     transition: opacity 0.3s ease;
 }
 
 .image-button img:hover {
-    opacity: 1; /* Fully opaque when hovered */
+    opacity: 1; 
 }
 
 .name {
@@ -117,8 +117,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Full viewport width */
-    height: 100%; /* Full viewport height */
+    width: 100%; 
+    height: 100%; 
     z-index: -1; 
     background-color: black; 
     object-fit: cover;
@@ -135,14 +135,14 @@ body {
 }
 
 .btn {
-    background-color: rgba(255, 255, 255, 0.8); /* Keep the button background white */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 10px 30px;
     font-family: 'Inter', sans-serif;
     border-radius: 5px;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
-    color: #000; /* Black as the fallback color */
+    color: #000; 
     text-decoration: none;
     display: block;
     margin-left: auto;
@@ -152,7 +152,7 @@ body {
 }
 
 .btn:hover {
-    background-color: rgba(255, 255, 255); /* Slight opacity change on hover */
+    background-color: rgba(255, 255, 255); 
 }
 
 /*----------------------------------------------ABOUT------------------------------------------------*/
@@ -168,7 +168,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     line-height: 1.3;
-    width: 60%;
+    width: 70%;
     color: rgb(165, 165, 165);
 }
 
@@ -185,7 +185,7 @@ body {
     color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .about-container {
         left: 10%;
         width: 80%;
@@ -200,6 +200,8 @@ body {
     .about-buttons{
         left:10%;
         font-size: 12px;
+        position: absolute;
+        top: 80%;
     }
 }
 
@@ -209,11 +211,11 @@ body {
 
 .button-container2 {
     display: flex;
-    flex-direction: column; /* Stack buttons vertically */
+    flex-direction: column; 
     position: fixed;
     bottom:70px;
-    right: 35px; /* Center the buttons horizontally */
-    gap: 20px; /* Space between the buttons */
+    right: 35px; 
+    gap: 20px; 
     margin-top: 20px;
 }
 .btn2{
@@ -221,8 +223,8 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight:400;
-    background-color: transparent; /* Transparent background */
-    text-decoration: none; /* Remove underline from links */
+    background-color: transparent; 
+    text-decoration: none; 
     text-align: right; 
     color: rgb(165, 165, 165);
 }
@@ -230,89 +232,84 @@ body {
 .about-buttons{
     position: absolute;
     left: 12%;
-    top: 58%; /* Center the buttons horizontally */
-    gap: 20px; /* Space between the buttons */
+    top: 58%; 
+    gap: 20px; 
     margin-top: 20px;
     display: flex; 
 }
 
 .btnp{
     display: inline-block;
-    padding: 10px; /* Adjust button size */
+    padding: 10px; 
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight:200;
-    color: white; /* White text color */
-    background-color: rgb(67, 67, 67); /* Transparent background */
-    text-decoration: none; /* Remove underline from links */
-    border: 1px solid white; /* White border */
-    border-radius: 20px; /* Rounded corners */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    color: white; 
+    background-color: rgb(67, 67, 67); 
+    text-decoration: none; 
+    border: 1px solid white; 
+    border-radius: 20px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
     width: 100px;
     text-align: center;
 }
 
 .btnc{
     display: inline-block;
-    padding: 10px; /* Adjust button size */
+    padding: 10px; 
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight:200;
-    color: white; /* White text color */
-    background-color: transparent; /* Transparent background */
-    text-decoration: none; /* Remove underline from links */
-    border: 1px solid white; /* White border */
-    border-radius: 20px; /* Rounded corners */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    color: white; 
+    background-color: transparent; 
+    text-decoration: none; 
+    border: 1px solid white; 
+    border-radius: 20px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
     width: 70px;
     text-align: center;
-    
 }
 
-/*----------------------------------------------PROJECTS------------------------------------------------*/
-.slider {
-    position: relative; /* Change from absolute to relative to keep it in place */
-    width: 368px;
-    height: 207px;
-    transform-style: preserve-3d; /* Center the carousel if needed */
-    animation: rotate 30s linear infinite; /* Adjust the speed of rotation */
-}
-
-/* Keyframes for smooth horizontal rotation */
-@keyframes rotate {
-    0% {
-        transform: perspective(1000px) rotateY(0deg); /* Remove translate to keep it fixed */
-    }
-    100% {
-        transform: perspective(1000px) rotateY(360deg); /* Smoothly rotate in place */
-    }
-}
-
-/* Style each image container (span) */
-.slider span {
-    position: absolute;
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
-/* Style for the images */
-.slider span img {
+.modal-content {
+    margin: 15% auto;
+    padding-top: 40px;
+    background-color: grey;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
     position: absolute;
-    top: 0; 
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+    top: 0px;
+    right: 20px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-/* Optional hover effect for images */
-.slider span:hover img {
-    transform: translateY(-50px) scale(1.2); /* Slight hover effect */
+.close:hover,
+.close:focus {
+    color: rgb(255, 143, 184);
+    text-decoration: none;
+    cursor: pointer;
+}.temp-btn{
+    color: white;
 }
